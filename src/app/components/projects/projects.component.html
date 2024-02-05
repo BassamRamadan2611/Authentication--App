@@ -1,0 +1,81 @@
+
+<!---
+<section class="work" id="work">
+  <div class="container">
+    <h2 class="heading text-center"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <div class="row" >
+      <div class="col-md-3" *ngFor="let project of projects" >
+        <div class="box-container " >
+
+          <div class="box tilt">
+             <img draggable="false" src="{{project.image}}" alt="" />
+             <div class="content">
+               <div class="tag">
+               <h3 class="text-center">{{project.name}}</h3>
+               </div>
+               <div class="desc">
+                 <p>{{project.desc}}</p>
+                 <div class="btns">
+                   <a href="{{project.links.view}}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                   <a href="{{project.links.code}}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+       </div>
+      </div>
+
+    </div>
+  </div>
+    <div class="viewall">
+      <a href="/projects" class="btn"><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+    </a>
+    </div>
+
+
+
+</section>
+ work project section starts -->
+
+
+<!-- work project section ends -->
+
+
+<!-- work project section starts -->
+<section class="work" id="work">
+
+  <h2 class="heading text-center"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container"  >
+
+    <div class="box tilt"  *ngFor="let project of projects" data-aos="fade-down">
+      <img draggable="false" src="{{project.image}}" alt="" />
+      <div class="content" >
+        <div class="tag">
+        <h3 class="text-center" style="font-size: 2rem; font-weight: 700;">{{project.name}}</h3>
+        </div>
+        <div class="desc">
+          <p>{{project.desc}}</p>
+          <div class="btns">
+            <a href="{{project.links.view}}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="{{project.links.code}}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="viewall">
+  <a href="https://github.com/BassamRamadan2611" target="_blank" class="btn m-4"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section>
+<!-- work project section ends -->
+<div class="img text-center" >
+  <img src="assets/images/arrow2.svg" >
+</div>

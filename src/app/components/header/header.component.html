@@ -1,0 +1,73 @@
+<!-- navbar starts -->
+<header>
+  <a href="/" class="logo"><img src="assets/images/2.png" style="width: 200px; height: 50px;"></a>
+
+  <div id="menu" class="fas fa-bars" (click)="toggleSettings()"></div>
+
+
+  <nav class="navbar">
+      <ul>
+      <li><a class=" " href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills </a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+      </ul>
+  </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home"  >
+<div id="particles-js"></div>
+
+<div class="content" style="padding-top: 80px;">
+<h2>Hi There,<br/><br> I'm Bassam <span style="padding: 10px;">Ramadan</span></h2>
+<p data-aos="fade-up">I'm <span class="typing-text" style="margin-top: 5px;font-size: 20px;">{{typewriter_display}}</span></p>
+<a data-aos="fade-up" href="#about" class="btn"><span>About Me</span>
+<i class="fas fa-arrow-circle-down"></i>
+</a>
+<div class="socials">
+  <ul class="social-icons">
+    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/bassam-ramadan-14436a185/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <li><a class="github" aria-label="GitHub" href="https://github.com/BassamRamadan2611" target="_blank"><i class="fab fa-github"></i></a></li>
+    <li>              <a href="mailto:bassamramadan964@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+    </li>
+
+
+   </ul>
+</div>
+</div>
+<div class="image" style="padding-top: 80px;">
+<img  data-aos="zoom-out" draggable="false" class="tilt" src="assets/images/me.jpg" alt="">
+</div>
+</section>
+<!-- hero section ends -->
+<div class="img text-center">
+  <img src="assets/images/arrow1.svg">
+</div>
+
+
+<div class="settings-box" [class.open]="classToggled">
+
+  <div class="settings-container">
+
+  <div class="nav-toggle">
+    <nav class="navbar">
+      <ul>
+      <li><a class="active" href="#home"(click)="resetToggle()">Home</a></li>
+      <li><a href="#about"(click)="resetToggle()">About</a></li>
+      <li><a href="#skills"(click)="resetToggle()">Skills </a></li>
+      <li><a href="#education"(click)="resetToggle()">Education</a></li>
+      <li><a href="#work"(click)="resetToggle()">Work</a></li>
+      <li><a href="#contact" (click)="resetToggle()">Contact</a></li>
+
+
+      </ul>
+  </nav>
+  </div>
+</div>
+</div>

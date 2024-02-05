@@ -1,0 +1,39 @@
+<!-- contact section starts -->
+<section class="contact" id="contact">
+
+  <h2 class="heading text-center" ><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form"  [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)" >
+
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" placeholder="Name" required formControlName="name">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="email" placeholder="Email" required formControlName="email">
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="text" name="phone" placeholder="Phone" formControlName="phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" name="message" required formControlName="message"></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit" [disabled]="!FormData.valid">
+          Submit <i class="fa fa-paper-plane" ></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->

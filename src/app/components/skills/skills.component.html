@@ -1,0 +1,26 @@
+<!-- skills section starts -->
+<section class="skills" id="skills">
+
+  <h2 class="heading text-center"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="container">
+        <div class="row" id="skillsContainer">
+
+           <div class="bar" *ngFor="let skill of skills" data-aos="flip-left"
+
+           data-aos-duration="5000">
+            <div class="info">
+              <img src="{{skill.icon}}" style="width: 50px; height: 50px;"/>
+
+              <span>{{skill.name}}</span>
+            </div>
+          </div>
+
+    </div>
+</div>
+
+</section>
+<div class="img text-center">
+  <img src="assets/images/arrow1.svg">
+</div>
+<!-- skills section ends -->
